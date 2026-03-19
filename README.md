@@ -1,10 +1,12 @@
-# CODETECH – TASK 4  
-## Exploratory Data Analysis & Pattern Discovery
+# VAUTECH IT SOLUTIONS – TASK 4
 
-**Intern:** Abhii Parihar  
-**Domain:** Data Science / Machine Learning  
-**Company:** CODETECH IT SOLUTIONS  
-
+**Intern:** Abhishek Parihar  
+**Intern ID:** VT26DS005  
+**Domain:** Data Science
+**Company:** VAUTECH IT SOLUTIONS  
+**Mentor:** Vishal Rajbhar
+ 
+**Task:** Exploratory Data Analysis and Pattern Discovery 
 ---
 
 ## 📌 Objective
