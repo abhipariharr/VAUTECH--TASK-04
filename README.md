@@ -39,6 +39,57 @@ In this task, I performed exploratory data analysis on the cleaned dataset to un
 ---
 
 ### 📊 1. Distribution of Suicide Numbers
-
-```python
 sns.histplot(df['suicides_no'])
+
+### 📊 2. Suicide rate by gender
+
+sns.barplot(x='sex', y='suicides_no', data=df)
+
+### 📊 3. Suicide Trends Over Years
+
+df.groupby('year')['suicides_no'].sum().plot()
+
+### 📊 4. Suicide Cases by Age Group
+
+sns.barplot(x='age', y='suicides_no', data=df)
+
+### 📊 5. Correlation Between Features
+
+sns.heatmap(df.corr(numeric_only=True), annot=True)
+
+### 📊 6. Outlier Detection
+
+sns.boxplot(x=df['suicides_no'])
+
+
+## Screenshots
+
+### Distribution Plot
+![Distribution](images/histogram.png)
+
+### Gender Comparison
+![Gender](images/gender.png)
+
+### Yearly Trend
+![Trend](images/year_trend.png)
+
+### Age Group Analysis
+![Age](images/age.png)
+
+### Correlation Heatmap
+![Heatmap](images/heatmap.png)
+
+### Outlier Detection
+![Boxplot](images/boxplot.png)
+
+## 📊 Key Observations
+
+- Suicide cases vary significantly across different years.
+
+- There is a noticeable difference between male and female suicide counts.
+
+- Certain age groups show higher suicide numbers compared to others.
+
+- Some numerical features show correlation with suicide rates.
+
+- Outliers are present in suicide count data.
